@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 HTML</title>
+    <meta name="description" content="tutorials">
+
+</head>
+
+<body>
+    <header>
+        <h1>Cat Adoption Center</h1>
+        <div>
+            <img src="imgs/catadoption.jpg" alt="Cat Adoption Logo" width="400" height="150">
+        </div>
+        <nav>
+            <h3>Contact Us!</h3>
+            <figure role="img" aria-labelledby="cat-caption">
+                <pre>
+    ╱|、
+  (˚ˎ 。7  
+   |、˜〵
+   じしˍ  ɿ                            
+</pre>
+            </figure>
+
+            <a href="tel:+12345678900">Contact: +1 (234) 567-8900</a>
+            <h3> Schedule an Appointment</h3>
+            <input type="date" id="appt" name="appt" min="2025-01-01" max="2026-12-31" required>
+            <br>
+            <br>
+            <label for="cats adopted" style="font-weight: bold;">Cats adopted:</label>
+            <progress id="cats adopted" value="1" max="3">33%</progress>
+
+            <ol>
+                <li><a href="#orange-tabby">Rusty - Orange Tabby</a></li>
+                <li><a href="#tuxedo-cat">Oreo - Tuxedo Cat</a></li>
+                <li><a href="#grey-tabby">Little Lady - Grey Tabby</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section id="orange-tabby">
+            <h3>Rusty</h3>
+            <img src="https://i.pinimg.com/736x/87/28/bc/8728bceccd7a5bc8ec136d1b79f6d4cc.jpg" alt="Orange tabby cat"
+                width="250" height="450">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, iusto quod. Recusandae provident
+                incidunt ab fugiat quos, dolores distinctio tempora! Quis ipsum assumenda maxime omnis quo, fugit
+                necessitatibus ad dolore!</p>
+        </section>
+        <br>
+        <br>
+        <section id="tuxedo-cat">
+            <h3>Oreo</h3>
+            <img src="https://i.pinimg.com/1200x/86/08/41/860841ff626a9ea785e4dcf4464e5be6.jpg" alt="Tuxedo cat"
+                width="350" height="450">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, iusto quod. Recusandae provident
+                incidunt ab fugiat quos, dolores distinctio tempora! Quis ipsum assumenda maxime omnis quo, fugit
+                necessitatibus ad dolore!</p>
+        </section>
+        <br>
+        <br>
+        <section id="grey-tabby">
+            <h3>Little Lady</h3>
+            <img src="https://i.pinimg.com/736x/a6/df/66/a6df660793e15ea2c373a32bdbd2cd30.jpg" alt="Grey tabby cat"
+                width="350" height="450">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, iusto quod. Recusandae provident
+                incidunt ab fugiat quos, dolores distinctio tempora! Quis ipsum assumenda maxime omnis quo, fugit
+                necessitatibus ad dolore!</p>
+        </section>
+
+        <section>
+            <label for="information" style="font-weight: bold;">Leave Your Information:</label>
+            <br>
+            <textarea id="information" name="information" rows="4" cols="50"
+                placeholder="Enter your information here..."></textarea>
+        </section>
+    </main>
+</body>
+
+</html>
