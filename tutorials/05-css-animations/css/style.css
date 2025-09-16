@@ -20,12 +20,19 @@ body {
     100% {transform: skew(30deg, 20deg);}
 }
 
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px auto;
+}
+
 .square {
     background-color: lightblue;
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    margin: 75px auto;
+    margin: 0 20px;
     transition: all 1s ease;
 
 }
@@ -33,6 +40,34 @@ body {
 .square:hover {
     background-color: lightskyblue;
     transform: rotate(30deg);
+}
+
+.square2 {
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 20px;
+    transition: all 1s ease;
+}
+
+.square2:hover {
+    background-color: mediumseagreen;
+    transform: scale(1.1);
+}
+
+.circle {
+    background-color: lightpink;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 20px;
+    transition: all 1s ease;
+}
+
+.circle:hover {
+    background-color: hotpink;
+    transform: skew(20deg, 10deg);
 }
 
 .button-div {
@@ -57,13 +92,54 @@ body {
     transform: scale(1.1);
 }
 
+.button2 {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block; 
+    transition: all 0.5s ease;
+
+}
+
+.button2:hover {
+    background-color: gray;
+    color: white;
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+
 .loading {
     background-color: lightcoral;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
     animation: stretch 2s;
-    width: 80vw;
+    width: 95vw;
 }
 
 @keyframes stretch {
     0% {width: 100px;}
-    100% {width: 80vw;}
+    100% {width: 95vw;}
+}
+
+.made-by {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px auto;
+    font-size: 14px;
+    animation: shake 2s infinite alternate;
+
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(0);}
+    75% {transform: translateX(5px);}
+    100% {transform: translateX(0);}
 }
