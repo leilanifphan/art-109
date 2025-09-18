@@ -88,6 +88,9 @@ footer a:hover{
 footer {
     background: darkseagreen;
     color: lavenderblush;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .socials {
@@ -97,10 +100,14 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 .socials img {
     width: 30px;
+}
 
+.socials img:hover {
+    opacity: 0.5;
 }
 
 /* RESUME */
@@ -125,4 +132,11 @@ footer {
     position: fixed;
     top: 5px;
     left: 5px;
+}
+
+/* WORK EXPERIENCE */
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
 }
