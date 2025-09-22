@@ -40,10 +40,32 @@ header {
 }
 
 main {
-   max-width: 800px;
-   margin: 50px auto;
+   
 }
 
-p {
-   margin-top: 20px;
+.image-div {
+   display: inline-block;
+}
+
+.hidden {
+   visibility: hidden;
+   
+}
+
+#image-0 {
+   position: absolute;
+   top: 200px;
+   left: 20vw;
+}
+
+#image-1 {
+   position: absolute;
+   top: 550px;
+   right: 20vw;
+}
+
+#image-2 {
+   position: fixed;
+   top: 900px;
+   right: 20vw;
 }
